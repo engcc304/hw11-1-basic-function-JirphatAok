@@ -11,4 +11,19 @@
     Output:
         Summation = 12 (Calculate by Additional Function)
 */
+#include <stdio.h>
+int P (  int Input01 , int Input02 , int Input03 ) {
+    int output = 0 ;
+    output = Input01 + Input02 + Input03 ;
+    return output ;
+}//end function
+int main () {
+    int Input01, Input02, Input03 ;
+    int ans ;
+    printf( "input\n" ) ;
+    scanf ("%d %d %d",&Input01 , &Input02 , &Input03) ;
+    ans = P (Input01 , Input02 , Input03) ;
+    printf( "Summation = %d (Calculate by Additional Function)",ans ) ;
 
+    return 0 ;
+}
